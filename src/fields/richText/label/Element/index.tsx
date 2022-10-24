@@ -2,9 +2,9 @@ import React from 'react';
 
 import './index.scss';
 
-const baseClass = 'rich-text-large-body';
+const baseClass = 'rich-text-label';
 
-const LargeBodyElement: React.FC<{
+const LabelElement: React.FC<{
   attributes: any
   element: any
   children: React.ReactNode
@@ -17,4 +17,4 @@ const LargeBodyElement: React.FC<{
     </span>
   </div>
 );
-export default LargeBodyElement;
+export default LabelElement;

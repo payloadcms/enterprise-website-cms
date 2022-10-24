@@ -1,4 +1,5 @@
 import { RichTextElement } from 'payload/dist/fields/config/types';
+import label from './label';
 import largeBody from './largeBody';
 
 const elements: RichTextElement[] = [
@@ -10,7 +11,7 @@ const elements: RichTextElement[] = [
   'h6',
   'link',
   largeBody,
-  // NEED LABEL ELEMENT
+  label,
 ];
 
 export default elements;

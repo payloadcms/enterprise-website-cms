@@ -1,7 +1,7 @@
 import { Field } from "payload/types";
 
 export const backgroundColor: Field = {
-  name: 'bgColor',
+  name: 'backgroundColor',
   type: 'select',
   defaultValue: 'white',
   options: [

@@ -4,20 +4,25 @@ import { backgroundColor } from "../../fields/backgroundColor";
 export const MediaBlock: Block = {
   slug: 'mediaBlock',
   fields: [
-    backgroundColor,
     {
-      name: 'position',
-      type: 'select',
-      defaultValue: 'default',
-      options: [
+      type: 'row',
+      fields: [
+        backgroundColor,
         {
-          label: 'Default',
-          value: 'default',
+          name: 'position',
+          type: 'select',
+          defaultValue: 'default',
+          options: [
+            {
+              label: 'Default',
+              value: 'default',
+            },
+            {
+              label: 'Fullscreen',
+              value: 'fullscreen',
+            }
+          ]
         },
-        {
-          label: 'Fullscreen',
-          value: 'fullscreen',
-        }
       ]
     },
     {

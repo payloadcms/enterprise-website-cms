@@ -1,13 +1,13 @@
-import plugin from './plugin';
-import Element from './Element';
-import Button from './Button';
 import { RichTextCustomElement } from 'payload/types';
+import Button from './Button';
+import Element from './Element';
+import withLabel from './plugin';
 
 export default {
-  name: 'video',
+  name: 'label',
   Button,
   Element,
   plugins: [
-    plugin,
+    withLabel,
   ],
 } as RichTextCustomElement;

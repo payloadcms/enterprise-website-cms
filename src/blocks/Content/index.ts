@@ -21,27 +21,32 @@ const columnFields: Field[] = [
 export const Content: Block = {
   slug: 'content',
   fields: [
-    backgroundColor,
     {
-      name: 'layout',
-      type: 'select',
-      defaultValue: 'oneColumn',
-      options: [
+      type: 'row',
+      fields: [
+        backgroundColor,
         {
-          label: 'One Column',
-          value: 'oneColumn',
-        },
-        {
-          label: 'Two Thirds + One Third',
-          value: 'twoThirdsOneThird',
-        },
-        {
-          label: 'Half + Half',
-          value: 'halfAndHalf',
-        },
-        {
-          label: 'Three Columns',
-          value: 'threeColumns',
+          name: 'layout',
+          type: 'select',
+          defaultValue: 'oneColumn',
+          options: [
+            {
+              label: 'One Column',
+              value: 'oneColumn',
+            },
+            {
+              label: 'Two Thirds + One Third',
+              value: 'twoThirdsOneThird',
+            },
+            {
+              label: 'Half + Half',
+              value: 'halfAndHalf',
+            },
+            {
+              label: 'Three Columns',
+              value: 'threeColumns',
+            },
+          ]
         },
       ]
     },
