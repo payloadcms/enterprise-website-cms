@@ -10,6 +10,7 @@ export const MainMenu: GlobalConfig = {
     {
       name: 'navItems',
       type: 'array',
+      maxRows: 6,
       fields: [
         link({
           appearances: false,
