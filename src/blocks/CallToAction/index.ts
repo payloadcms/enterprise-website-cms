@@ -1,4 +1,5 @@
 import { Block } from "payload/types";
+import { backgroundColor } from "../../fields/backgroundColor";
 import linkGroup from "../../fields/linkGroup";
 import richText from "../../fields/richText";
 
@@ -9,6 +10,7 @@ export const CallToAction: Block = {
     plural: 'Calls to Action',
   },
   fields: [
+    backgroundColor,
     richText(),
     linkGroup({
       appearances: false,

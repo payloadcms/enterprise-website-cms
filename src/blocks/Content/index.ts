@@ -1,4 +1,5 @@
 import { Block, Field } from "payload/types";
+import { backgroundColor } from "../../fields/backgroundColor";
 import link from "../../fields/link";
 import richText from "../../fields/richText";
 
@@ -20,6 +21,7 @@ const columnFields: Field[] = [
 export const Content: Block = {
   slug: 'content',
   fields: [
+    backgroundColor,
     {
       name: 'layout',
       type: 'select',
