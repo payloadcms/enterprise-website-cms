@@ -43,6 +43,7 @@ export const seed = async (payload: Payload) => {
             type: 'custom',
             url: 'https://github.com/payloadcms/payload',
             label: 'GitHub',
+            newTab: true,
           }
         },
         {
@@ -50,6 +51,7 @@ export const seed = async (payload: Payload) => {
             type: 'custom',
             url: 'https://payloadcms.com',
             label: 'Payload',
+            newTab: true,
           }
         },
         {
