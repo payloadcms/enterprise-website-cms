@@ -1,6 +1,7 @@
 import { Payload } from 'payload';
 import path from 'path';
 import { home } from './home';
+import { anotherPage } from './another-page';
 
 export const seed = async (payload: Payload) => {
   await payload.create({
@@ -24,5 +25,44 @@ export const seed = async (payload: Payload) => {
   await payload.create({
     collection: 'pages',
     data: homepageJSON,
+  })
+
+  const anotherPageJSON = JSON.parse(JSON.stringify(anotherPage).replace(/{{MOUNTAIN_IMAGE}}/g, mountainPhotoID));
+
+  const { id: anotherPageID } = await payload.create({
+    collection: 'pages',
+    data: anotherPageJSON,
+  })
+
+  await payload.updateGlobal({
+    slug: 'main-menu',
+    data: {
+      navItems: [
+        {
+          link: {
+            type: 'custom',
+            url: 'https://github.com/payloadcms/payload',
+            label: 'GitHub',
+          }
+        },
+        {
+          link: {
+            type: 'custom',
+            url: 'https://payloadcms.com',
+            label: 'Payload',
+          }
+        },
+        {
+          link: {
+            type: 'reference',
+            reference: {
+              relationTo: 'pages',
+              value: anotherPageID
+            },
+            label: 'Another Page',
+          }
+        }
+      ]
+    }
   })
 }
