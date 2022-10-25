@@ -13,7 +13,6 @@ export const CallToAction: Block = {
     backgroundColor({ overrides: { name: 'ctaBackgroundColor' } }),
     richText(),
     linkGroup({
-      appearances: false,
       overrides: {
         maxRows: 2,
       }

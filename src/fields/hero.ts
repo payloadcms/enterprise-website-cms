@@ -14,7 +14,7 @@ export const hero: Field = {
       name: 'type',
       label: 'Type',
       required: true,
-      defaultValue: 'default',
+      defaultValue: 'lowImpact',
       options: [
         {
           label: 'High Impact',
