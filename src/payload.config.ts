@@ -5,6 +5,7 @@ import { Users } from './collections/Users';
 import { Pages } from './collections/Pages';
 import { MainMenu } from './globals/MainMenu';
 import { Media } from './collections/Media';
+import { seed } from './seed';
 
 export default buildConfig({
   collections: [
@@ -25,5 +26,10 @@ export default buildConfig({
       ],
       uploadsCollection: 'media',
     })
-  ]
+  ],
+  onInit: async (payload) => {
+    if (process.env.PAYLOAD_SEED === 'true') {
+      await seed(payload);
+    }
+  }
 });

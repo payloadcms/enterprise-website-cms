@@ -13,7 +13,8 @@
     "outDir": "./dist",
     "rootDir": "./src",
     "jsx": "react",
-    "sourceMap": true
+    "sourceMap": true,
+    "resolveJsonModule": true
   },
   "include": [
     "src"
