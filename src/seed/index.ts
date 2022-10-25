@@ -19,7 +19,7 @@ export const seed = async (payload: Payload) => {
     },
   });
 
-  const homepageJSON = JSON.parse(JSON.stringify(home).replaceAll('{{MOUNTAIN_IMAGE}}', mountainPhotoID));
+  const homepageJSON = JSON.parse(JSON.stringify(home).replace(/{{MOUNTAIN_IMAGE}}/g, mountainPhotoID));
 
   await payload.create({
     collection: 'pages',
