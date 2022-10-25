@@ -132,7 +132,7 @@ export const home = {
       "blockType": "content"
     },
     {
-      "mediaBackgroundColor": "white",
+      "mediaBlockBackgroundColor": "white",
       "position": "default",
       "media": "{{MOUNTAIN_IMAGE}}",
       "caption": [

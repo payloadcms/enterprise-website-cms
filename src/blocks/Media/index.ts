@@ -7,7 +7,7 @@ export const MediaBlock: Block = {
     {
       type: 'row',
       fields: [
-        backgroundColor({ overrides: { name: 'mediaBackgroundColor' } }),
+        backgroundColor({ overrides: { name: 'mediaBlockBackgroundColor' } }),
         {
           name: 'position',
           type: 'select',
