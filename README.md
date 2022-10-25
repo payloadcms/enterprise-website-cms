@@ -1,5 +1,5 @@
 # Learn With Jason Payload CMS boilerplate
-This is a boilerplate for a CMS built with [Payload](https://payloadcms.com) used on the [Learn With Jason](https://www.twitch.tv/videos/1634169498) episode Twitch stream. This is a starter template that showcases how to scaffold out collections, globals and fields in Payload. You can pull this down and launch it locally to see how it works.
+This is a boilerplate for a CMS built with [Payload](https://payloadcms.com) used on the [Learn With Jason](https://www.twitch.tv/videos/1634169498) Twitch stream. This is a starter template that showcases how to scaffold out collections, globals and fields in Payload. You can pull this down and launch it locally to see how it works.
 
 ## Getting Started
 1. Clone this repo
