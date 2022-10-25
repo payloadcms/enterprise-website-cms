@@ -12,7 +12,9 @@
     "skipLibCheck": true,
     "outDir": "./dist",
     "rootDir": "./src",
-    "jsx": "react"
+    "jsx": "react",
+    "sourceMap": true,
+    "resolveJsonModule": true
   },
   "include": [
     "src"
