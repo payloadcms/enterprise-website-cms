@@ -56,7 +56,7 @@ export interface Page {
   };
   layout: (
     | {
-        bgColor?: 'white' | 'black';
+        ctaBackgroundColor?: 'white' | 'black';
         richText: {
           [k: string]: unknown;
         }[];
@@ -78,7 +78,7 @@ export interface Page {
         blockType: 'cta';
       }
     | {
-        bgColor?: 'white' | 'black';
+        contentBackgroundColor?: 'white' | 'black';
         layout?: 'oneColumn' | 'twoThirdsOneThird' | 'halfAndHalf' | 'threeColumns';
         columnOne: {
           richText: {
@@ -136,7 +136,7 @@ export interface Page {
         blockType: 'content';
       }
     | {
-        bgColor?: 'white' | 'black';
+        mediaBackgroundColor?: 'white' | 'black';
         position?: 'default' | 'fullscreen';
         media: string | Media;
         caption?: {

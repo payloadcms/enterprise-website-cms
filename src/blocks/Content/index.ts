@@ -24,7 +24,7 @@ export const Content: Block = {
     {
       type: 'row',
       fields: [
-        backgroundColor,
+        backgroundColor({ overrides: { name: 'contentBackgroundColor' } }),
         {
           name: 'layout',
           type: 'select',

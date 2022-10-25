@@ -1,6 +1,11 @@
-import { Field } from "payload/types";
+import { Field, SelectField } from "payload/types";
+import deepMerge from '../utilities/deepMerge';
 
-export const backgroundColor: Field = {
+type Args = {
+  overrides?: Partial<SelectField>
+}
+
+export const backgroundColor = ({ overrides = {} }: Args): Field => deepMerge({
   name: 'backgroundColor',
   type: 'select',
   defaultValue: 'white',
@@ -14,4 +19,4 @@ export const backgroundColor: Field = {
       value: 'black',
     }
   ]
-}
+}, overrides)
