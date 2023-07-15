@@ -1,5 +1,5 @@
 # Enterprise Website Design System CMS boilerplate
-This is a boilerplate for a CMS built with [Payload](https://payloadcms.com)This is a starter template that showcases how to scaffold out collections, globals and fields in Payload. You can pull this down and launch it locally to see how it works.
+This is a boilerplate for a CMS built with [Payload](https://payloadcms.com). It's a starter template that showcases how to scaffold out collections, globals and fields in Payload. You can pull this down and launch it locally to see how it works.
 
 ## Getting Started
 1. Clone this repo
